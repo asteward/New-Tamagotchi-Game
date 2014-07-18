@@ -1,0 +1,18 @@
+h1 {
+  font-size: 4em;
+  color: #111111;
+}
+
+
+#play-tamagotchi {
+  display: none;
+}
+
+#dead-tamagotchi {
+  display: none;
+  color: #ff0000;
+}
+
+#dead-tamagotchi h1 {
+  color: #ff0000;
+}
