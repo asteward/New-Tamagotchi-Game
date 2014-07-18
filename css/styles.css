@@ -3,8 +3,17 @@
   background-color: #94AD6F;
 }
 .jumbotron h1 {
+  color: #f7f7f4;
   font-size: 120px;
+  text-shadow: 0px .01em 0px #dededa, 0 .015em 0 #dededa, 0 .02em 0 #dededa, 0 .028em 0 #dededa, 0 .035em 0 #dededa, 0 .04em 0 #dededa, 0 .045em 0 #dbdbd6, 0 .055em 0 #dbdbd6, 0 .06em 0 #dbdbd6, 0 .065em 0 #d9d9d4, 0 .07em 0 #d9d9d4, 0 .08em 0 #d8d8d3, 0 .085em 0 #d8d8d3, 0 .09em 0 #d8d8d3, 0 .095em 0 #d6d6d1, 0 .105em 0 #d6d6d1, 0 .06em .06em rgba(104, 104, 92, 0.15), .07em .105em .04em rgba(0, 0, 0, .015), -.02em .09em .05em rgba(104, 104, 92, 0.25), -.03em .07em .065em rgba(104, 104, 92, 0.1), -.075em .08em .09em rgba(104, 104, 92, 0.06), -.09em .06em .195em rgba(104, 104, 92, 0.095);
+  transition: all .18s ease-out, font-size, padding-top, top, margin, left, padding-left, margin-left, background, background-size, line-height, padding-bottom, padding-right, margin-right, letter-spacing, display, width, text-align 0s linear;
+
 }
+
+.jumbotron h1:hover {
+text-shadow: 0px .01em 0px #fff,0px -.01em 0px #cfcfc9;
+}
+
 input#name {
   display: block;
   margin-right: auto;
@@ -50,18 +59,43 @@ button.circle:hover {
   -webkit-transform: rotate(-40deg);
 }
 
-.game-over {
+.game-over p {
+  color: #f7f7f4;
   text-align: center;
   text-transform: uppercase;
-  font-size: 80px;
-}
-
-.death-cause {
-  color: red;
+  font-size: 150px;
   font-weight: bold;
-}
-
-img.grave {
-  max-height: 50%;
+  text-shadow: 0px .01em 0px #dededa, 0 .015em 0 #dededa, 0 .02em 0 #dededa, 0 .028em 0 #dededa, 0 .035em 0 #dededa, 0 .04em 0 #dededa, 0 .045em 0 #dbdbd6, 0 .055em 0 #dbdbd6, 0 .06em 0 #dbdbd6, 0 .065em 0 #d9d9d4, 0 .07em 0 #d9d9d4, 0 .08em 0 #d8d8d3, 0 .085em 0 #d8d8d3, 0 .09em 0 #d8d8d3, 0 .095em 0 #d6d6d1, 0 .105em 0 #d6d6d1, 0 .06em .06em rgba(104, 104, 92, 0.15), .07em .105em .04em rgba(0, 0, 0, .015), -.02em .09em .05em rgba(104, 104, 92, 0.25), -.03em .07em .065em rgba(104, 104, 92, 0.1), -.075em .08em .09em rgba(104, 104, 92, 0.06), -.09em .06em .195em rgba(104, 104, 92, 0.095);
+  transition: all .18s ease-out, font-size, padding-top, top, margin, left, padding-left, margin-left, background, background-size, line-height, padding-bottom, padding-right, margin-right, letter-spacing, display, width, text-align 0s linear;
 
 }
+
+.game-over p:hover {
+  text-shadow: 0px .01em 0px #fff,0px -.01em 0px #cfcfc9;
+}
+
+
+/*.grave-image {
+  background: url(../img/grave-stone.png);
+  background-size: cover;
+  height: 800px;
+  width: 550px;
+  display: block;
+  margin: 0 auto;
+}
+
+#grave-name {
+  /*z-index: 1;*/
+/*  text-align: center;
+  top: 250px;
+  left: 20px;
+  position: relative;
+  color: #f7f7f4;
+  text-shadow: 0px .01em 0px #dededa, 0 .015em 0 #dededa, 0 .02em 0 #dededa, 0 .028em 0 #dededa, 0 .035em 0 #dededa, 0 .04em 0 #dededa, 0 .045em 0 #dbdbd6, 0 .055em 0 #dbdbd6, 0 .06em 0 #dbdbd6, 0 .065em 0 #d9d9d4, 0 .07em 0 #d9d9d4, 0 .08em 0 #d8d8d3, 0 .085em 0 #d8d8d3, 0 .09em 0 #d8d8d3, 0 .095em 0 #d6d6d1, 0 .105em 0 #d6d6d1, 0 .06em .06em rgba(104, 104, 92, 0.15), .07em .105em .04em rgba(0, 0, 0, .015), -.02em .09em .05em rgba(104, 104, 92, 0.25), -.03em .07em .065em rgba(104, 104, 92, 0.1), -.075em .08em .09em rgba(104, 104, 92, 0.06), -.09em .06em .195em rgba(104, 104, 92, 0.095);
+  transition: all .18s ease-out, font-size, padding-top, top, margin, left, padding-left, margin-left, background, background-size, line-height, padding-bottom, padding-right, margin-right, letter-spacing, display, width, text-align 0s linear;
+}
+
+#grave-name:hover {
+  text-shadow: 0px .01em 0px #fff,0px -.01em 0px #cfcfc9;
+}*/
+

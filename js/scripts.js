@@ -47,9 +47,10 @@ $(document).ready(function() {
         $(".jumbotron").slideUp("slow", function() {});
         $(".gameplay").slideUp("slow", function() {});
         $(".game-over").fadeIn();
-        $("#dead-pet-name").text(newPet.name);
+        $(".dead-pet-name").text(newPet.name);
         $(".death-cause").text(newPet.isAlive());
         $(".grave").fadeIn();
+
       }
     }, 100);
 
