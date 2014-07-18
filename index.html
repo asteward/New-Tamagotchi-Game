@@ -1,0 +1,72 @@
+<html>
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/scripts.js"></script>
+  <title>Tamagotchi!</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Tamagotchi</h1>
+      <form id="new-name">
+        <div class="form-group">
+          <p>Give your Tamagotchi a name!</p>
+          <label for="name"></label>
+          <input type="submit/text" class="form-control" id="name" placeholder="Billings" required>
+        </div><!-- form-group -->
+      </form>
+
+      </div><!-- jumbotron -->
+    <div class="gameplay">
+      <div class="name-row">
+        <h2 class="pet-name"></h2>
+      </div><!-- name-row -->
+
+      <div class="row">
+        <div id="food">
+          <div class='progress progress-food'>
+            <div class='progress-bar progress-bar-striped active progress-bar-primary'  role='progressbar' aria-valuenow=''aria-valuemin='0' aria-valuemax='100' style="width: newPet.foodLevel%">
+            <!-- <span class='sr-only'> newPet.foodLevel % Complete</span> -->
+            </div>
+          </div>
+        </div>
+
+        <div id="sleep">
+          <div class='progress progress-sleep'>
+            <div class='progress-bar progress-bar-striped active progress-bar-success'  role='progressbar' aria-valuenow=''aria-valuemin='0' aria-valuemax='100' style="width: newPet.sleepLevel%">
+            <!-- <span class='sr-only'> newPet.sleepLevel % Complete</span> -->
+            </div>
+          </div>
+        </div>
+
+        <div id="activity">
+          <div class='progress progress-activity'>
+            <div class='progress-bar progress-bar-striped active progress-bar-danger'  role='progressbar' aria-valuenow=''aria-valuemin='0' aria-valuemax='100' style="width: newPet.activityLevel%">
+            <!-- <span class='sr-only'> newPet.activityLevel % Complete</span> -->
+            </div>
+          </div>
+
+        </div>
+      </div><!-- Row -->
+      <div class="row">
+        <div class="col-md-4">
+          <button type="button" class="btn btn-primary circle" id="button-feed">Feed Me</button>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn btn-success circle" id="button-sleep">Sleep Me</button>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn btn-danger circle" id="button-activity">Activity Me</button>
+        </div>
+      </div>
+    </div><!-- Gameplay -->
+    <div class="game-over">
+      <p>You failed. Poor old <span id="dead-pet-name"></span> died of <span class="death-cause"></span>!</p>
+      <img class="grave" src="img/grave-stone.png">
+    </div>
+  </div><!-- Container -->
+
+</body>
+</html>
